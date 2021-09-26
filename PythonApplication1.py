@@ -1,15 +1,25 @@
+#biggest number between 3
 def pepega(x,y,z):
  if x >= y:
      if x >= z:
          n1 = x
+     else:
+         n1 = z
  elif y >= z:
     n1 = y
  else:
     n1 = z
  print("the biggest number is " + str(n1))
 
-pepega(-2,12,12)
+pepega(12,12,12)
+pepega(12,123,333)
+pepega(12,222,123)
+pepega(444,12,123)
+pepega(555,123,12)
+pepega(123,666,12)
+pepega(123,12,777)
 
+#sort 3 numbers
 def compare3(x,y,z):
  n2 = x+y+z
  if x >= y:
@@ -57,6 +67,7 @@ var = ss/n - mean**2
 kurto = ss4/(n*var**2)
 print(kurto)
 
+#calculate kurtosis
 def kurtosis(x):
     if (type(x) != list and type(x) != int and type(x) != tuple and type(x) != range and type(x) != float):
         print("input number you retard")
